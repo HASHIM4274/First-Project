@@ -21,9 +21,8 @@ This analysis uses clean and normalized datasets across the following tables:
 The database design follows normalization principles and is ideal for SQL practice and business intelligence reporting.
 
 
-
 ## Objectives
-
+The objective of this project is to develop and sharpen my sql skill by answering business questions to help make data driven decisions;
 - Explore product distribution by brand and category
 - Identify top-performing brands by product count or price range
 - Detect understocked or overstocked categories
@@ -32,7 +31,7 @@ The database design follows normalization principles and is ideal for SQL practi
 
 
 ## Skills Used
-
+I will be using the following set skills to achieve my objectives
 - SQL Server (T-SQL)
 - Joins (`INNER JOIN`)
 - Aggregations (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`)
@@ -42,7 +41,7 @@ The database design follows normalization principles and is ideal for SQL practi
 
 ---
 
-## 🔍 Key Business Questions Answered
+## The following Key Business Questions Answered in order to achieve my objectives:
 
 - Which brands have the most products listed?
 - What is the average price of products in each category?
