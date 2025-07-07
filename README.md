@@ -75,4 +75,18 @@ I followed these steps;
    JOIN 
     brands b ON p.brand_id = b.brand_id
    ```
-4. 
+4. After I joined the brands table and the products table, I proceeded to count the number of products listed by the different brands and then ordered them in descending order to give me the answer to my question; Which brands have the most products listed?
+   ```sql
+   SELECT 
+    b.brand_name AS name,
+    COUNT(p.product_id) AS product_count
+   FROM 
+    products p
+   JOIN 
+    brands b ON p.brand_id = b.brand_id
+   GROUP BY 
+    b.brand_name
+   ORDER BY 
+    product_count DESC;
+   ```
+   
