@@ -39,7 +39,7 @@ I will be using the following set skills to achieve my objectives
 - Sorting and ranking
 - Subqueries and `TOP N` logic
 
----
+--
 
 ## The following Key Business Questions Answered in order to achieve my objectives:
 
@@ -48,3 +48,31 @@ I will be using the following set skills to achieve my objectives
 - Which categories are low on stock?
 - What are the top 5 most expensive products and their brands/categories?
 - What is the price range for each brand?
+
+---
+### How I Answered The Questions
+
+To answer the question, Which brands have the most products listed?
+I followed these steps;
+1. I selected everything from the brands table
+  ```sql
+    SELECT *
+    FROM brands
+  ```
+2. Then, I selected everything from the products table
+   ```sql
+   SELECT *
+   FROM products
+   ```
+3. Then, I joined the two tables
+   ```sql
+   SELECT 
+    p.product_id,
+    p.product_name,
+    b.brand_name
+   FROM 
+    products p
+   JOIN 
+    brands b ON p.brand_id = b.brand_id
+   ```
+4. 
